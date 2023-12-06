@@ -11,8 +11,8 @@ for (let i = 0; i < contents.length; ++i) {
   let num1 = null;
   let num2 = null;
   for (let k = 0; k < contents[i].length; ++k) {
-    let temp = Number.parseInt(contents[i][k]);
-    if (Number.isInteger(temp)) {
+    let temp = parseInt(contents[i][k]);
+    if (!isNaN(temp)) {
       num1 = num1 ?? temp;
       num2 = temp;
     }
